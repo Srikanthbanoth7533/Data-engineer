@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px;">🚀 Projetos</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">Pipeline ETL com Apache Airflow</h2>
+            <p style="color: #ccc;">Pipeline completo de ingestão, transformação e carga de dados usando Airflow + PostgreSQL.</p>
+            <div style="margin-top: 12px;">
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">Python</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">Airflow</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem;">PostgreSQL</span>
+            </div>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">Streaming com Apache Kafka</h2>
+            <p style="color: #ccc;">Processamento de dados em tempo real com Kafka, Python e Elasticsearch.</p>
+            <div style="margin-top: 12px;">
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">Kafka</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">Python</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem;">Elasticsearch</span>
+            </div>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">Deploy na AWS com Terraform</h2>
+            <p style="color: #ccc;">Infraestrutura como código para deploy de pipeline de dados na AWS.</p>
+            <div style="margin-top: 12px;">
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">Terraform</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem; margin-right: 6px;">AWS</span>
+                <span style="background: #6c4896; border-radius: 4px; padding: 3px 8px; font-size: 0.8rem;">Docker</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-from .views import index, dashboard, mentor, cursos, perfil, planos_estudo, projetos, entrevistas, matricula, login, sobre
+from .views import index, dashboard, mentor, cursos, perfil, cursos_andamento, planos_estudo, projetos, entrevistas, matricula, login, sobre
 from django.urls import path
 
 urlpatterns = [   
@@ -7,7 +7,7 @@ urlpatterns = [
             path('mentor', mentor, name='mentor'),
             path('cursos', cursos, name='cursos'),
             path('perfil', perfil, name='perfil'),
-            path('cursos_andamento', perfil, name='cursos_andamento'),
+            path('cursos_andamento', cursos_andamento, name='cursos_andamento'),
             path('planos_estudo', planos_estudo, name='planos_estudo'),
             path('projetos', projetos, name='projetos'),
             path('entrevistas', entrevistas, name='entrevistas'),

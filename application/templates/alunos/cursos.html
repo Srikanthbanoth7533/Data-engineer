@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px;">📚 Cursos</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">🐍 Formação Python</h2>
+            <p style="color: #ccc;">Do básico ao avançado em Python para Engenharia de Dados.</p>
+            <a href="#" style="background: #6c4896; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 12px;">Ver Cursos</a>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">🗄️ Formação Banco de Dados</h2>
+            <p style="color: #ccc;">SQL, NoSQL, PostgreSQL, MongoDB, Redis e mais.</p>
+            <a href="#" style="background: #6c4896; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 12px;">Ver Cursos</a>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">☁️ Formação Cloud</h2>
+            <p style="color: #ccc;">AWS, GCP, Docker, Kubernetes, Terraform e DevOps.</p>
+            <a href="#" style="background: #6c4896; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 12px;">Ver Cursos</a>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">📊 Formação Engenheiro de Dados</h2>
+            <p style="color: #ccc;">Apache Airflow, Apache Beam, Kafka, ETL e Pipelines.</p>
+            <a href="#" style="background: #6c4896; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 12px;">Ver Cursos</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

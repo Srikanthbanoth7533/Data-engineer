@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px;">🎤 Entrevistas</h1>
+    <p style="color: #ccc; margin-bottom: 30px;">Prepare-se para entrevistas técnicas de Engenharia de Dados</p>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #20162c; border-left: 4px solid #ec6f09; border-radius: 8px; padding: 20px;">
+            <h3 style="margin: 0 0 8px; color: #ec6f09;">Perguntas de Python</h3>
+            <p style="color: #ccc; margin: 0;">Decoradores, generators, list comprehension, OOP, asyncio e mais.</p>
+            <a href="#" style="color: #6c4896; margin-top: 8px; display: inline-block;">Ver questões →</a>
+        </div>
+        <div style="background: #20162c; border-left: 4px solid #ec6f09; border-radius: 8px; padding: 20px;">
+            <h3 style="margin: 0 0 8px; color: #ec6f09;">Perguntas de SQL</h3>
+            <p style="color: #ccc; margin: 0;">JOINs, Window Functions, CTEs, índices, otimização de queries.</p>
+            <a href="#" style="color: #6c4896; margin-top: 8px; display: inline-block;">Ver questões →</a>
+        </div>
+        <div style="background: #20162c; border-left: 4px solid #ec6f09; border-radius: 8px; padding: 20px;">
+            <h3 style="margin: 0 0 8px; color: #ec6f09;">Perguntas de Engenharia de Dados</h3>
+            <p style="color: #ccc; margin: 0;">ETL vs ELT, Data Lakehouse, streaming vs batch, particionamento de dados.</p>
+            <a href="#" style="color: #6c4896; margin-top: 8px; display: inline-block;">Ver questões →</a>
+        </div>
+        <div style="background: #20162c; border-left: 4px solid #ec6f09; border-radius: 8px; padding: 20px;">
+            <h3 style="margin: 0 0 8px; color: #ec6f09;">System Design para Dados</h3>
+            <p style="color: #ccc; margin: 0;">Como projetar pipelines escaláveis, tolerantes a falhas e monitoráveis.</p>
+            <a href="#" style="color: #6c4896; margin-top: 8px; display: inline-block;">Ver questões →</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

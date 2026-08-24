@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px;">📊 Dashboard</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        <div style="background: #6c4896; border-radius: 12px; padding: 24px; text-align: center;">
+            <h3>Cursos em Andamento</h3>
+            <p style="font-size: 2rem; font-weight: bold;">3</p>
+        </div>
+        <div style="background: #6c4896; border-radius: 12px; padding: 24px; text-align: center;">
+            <h3>Projetos</h3>
+            <p style="font-size: 2rem; font-weight: bold;">5</p>
+        </div>
+        <div style="background: #6c4896; border-radius: 12px; padding: 24px; text-align: center;">
+            <h3>Entrevistas</h3>
+            <p style="font-size: 2rem; font-weight: bold;">2</p>
+        </div>
+        <div style="background: #6c4896; border-radius: 12px; padding: 24px; text-align: center;">
+            <h3>Planos de Estudo</h3>
+            <p style="font-size: 2rem; font-weight: bold;">4</p>
+        </div>
+    </div>
+    <div style="margin-top: 40px;">
+        <h2 style="margin-bottom: 16px;">Formações Disponíveis</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="padding: 12px; background: #20162c; border-radius: 8px; margin-bottom: 10px;">🐍 Formação Python</li>
+            <li style="padding: 12px; background: #20162c; border-radius: 8px; margin-bottom: 10px;">🗄️ Formação Banco de Dados</li>
+            <li style="padding: 12px; background: #20162c; border-radius: 8px; margin-bottom: 10px;">☁️ Formação Cloud</li>
+            <li style="padding: 12px; background: #20162c; border-radius: 8px; margin-bottom: 10px;">📊 Formação Engenheiro de Dados</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

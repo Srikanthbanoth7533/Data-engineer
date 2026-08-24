@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px;">📋 Planos de Estudo</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">Plano: Engenheiro de Dados Jr.</h2>
+            <p style="color: #aaa; font-size: 0.9rem;">Duração estimada: 6 meses</p>
+            <ul style="color: #ccc; padding-left: 20px; margin-top: 12px;">
+                <li>✅ Python Básico</li>
+                <li>✅ SQL Fundamentos</li>
+                <li>🔄 Apache Airflow</li>
+                <li>⬜ Apache Beam / Dataflow</li>
+                <li>⬜ Kafka</li>
+                <li>⬜ Cloud (AWS/GCP)</li>
+            </ul>
+        </div>
+        <div style="background: #20162c; border: 1px solid #6c4896; border-radius: 12px; padding: 24px;">
+            <h2 style="color: #ec6f09;">Plano: DevOps para Dados</h2>
+            <p style="color: #aaa; font-size: 0.9rem;">Duração estimada: 4 meses</p>
+            <ul style="color: #ccc; padding-left: 20px; margin-top: 12px;">
+                <li>✅ Docker</li>
+                <li>🔄 Kubernetes</li>
+                <li>⬜ Terraform</li>
+                <li>⬜ CI/CD com GitLab</li>
+                <li>⬜ Grafana & Netdata</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

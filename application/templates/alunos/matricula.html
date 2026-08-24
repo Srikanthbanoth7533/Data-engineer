@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif; max-width: 600px; margin: 0 auto;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 30px; text-align: center;">📝 Matrícula</h1>
+    <form method="post" action="{% url 'matricula' %}" style="background: #20162c; padding: 32px; border-radius: 12px; border: 1px solid #6c4896;">
+        {% csrf_token %}
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">Nome Completo</label>
+            <input type="text" name="nome" placeholder="Seu nome" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">E-mail</label>
+            <input type="email" name="email" placeholder="seu@email.com" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">Formação de Interesse</label>
+            <select name="formacao" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+                <option value="">Selecione uma formação</option>
+                <option value="python">🐍 Formação Python</option>
+                <option value="banco">🗄️ Formação Banco de Dados</option>
+                <option value="cloud">☁️ Formação Cloud</option>
+                <option value="engenheiro">📊 Formação Engenheiro de Dados</option>
+            </select>
+        </div>
+        <div style="margin-bottom: 24px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">Senha</label>
+            <input type="password" name="password" placeholder="Crie uma senha" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+        </div>
+        <button type="submit" style="width: 100%; padding: 14px; background: #ec6f09; border: none; border-radius: 8px; color: white; font-size: 1.1rem; font-family: 'Oswald', sans-serif; cursor: pointer; font-weight: 600;">Matricular-se</button>
+        <p style="text-align: center; margin-top: 20px; color: #aaa;">Já tem conta? <a href="{% url 'login' %}" style="color: #ec6f09;">Fazer login</a></p>
+    </form>
+</div>
+
+{% endblock %}

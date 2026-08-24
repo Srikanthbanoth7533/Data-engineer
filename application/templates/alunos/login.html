@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="padding: 40px; color: white; font-family: 'Oswald', sans-serif; max-width: 500px; margin: 0 auto;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 10px; text-align: center;">🔐 Login</h1>
+    <p style="color: #aaa; text-align: center; margin-bottom: 30px;">Acesse sua conta</p>
+    <form method="post" action="{% url 'login' %}" style="background: #20162c; padding: 32px; border-radius: 12px; border: 1px solid #6c4896;">
+        {% csrf_token %}
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">Usuário</label>
+            <input type="text" name="username" placeholder="Seu usuário" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+        </div>
+        <div style="margin-bottom: 24px;">
+            <label style="display: block; margin-bottom: 8px; color: #ccc;">Senha</label>
+            <input type="password" name="password" placeholder="Sua senha" style="width: 100%; padding: 12px; background: #2d1f3f; border: 1px solid #6c4896; border-radius: 6px; color: white; font-size: 1rem; box-sizing: border-box;">
+        </div>
+        <button type="submit" style="width: 100%; padding: 14px; background: #ec6f09; border: none; border-radius: 8px; color: white; font-size: 1.1rem; font-family: 'Oswald', sans-serif; cursor: pointer; font-weight: 600;">Entrar</button>
+        <p style="text-align: center; margin-top: 20px; color: #aaa;">Não tem conta? <a href="{% url 'matricula' %}" style="color: #ec6f09;">Matricule-se</a></p>
+    </form>
+</div>
+
+{% endblock %}
