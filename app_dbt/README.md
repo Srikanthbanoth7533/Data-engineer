@@ -1,8 +1,8 @@
 ### Using the starter project
 
-# DBT Project: dbt_andreichiro
+# DBT Project: dbt_srikanth
 
-This DBT (Data Build Tool) project, dbt_andreichiro, transforms staging data from databricks into clean, transformed, and aggregated data for analytics. This project primarily focuses on the intermediate and data mart layers, implementing CTEs, normalizations, and a Snowflake schema for effective data analysis.
+This DBT (Data Build Tool) project, dbt_srikanth, transforms staging data from databricks into clean, transformed, and aggregated data for analytics. This project primarily focuses on the intermediate and data mart layers, implementing CTEs, normalizations, and a Snowflake schema for effective data analysis.
 
 ## Project Overview
 

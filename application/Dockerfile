@@ -7,8 +7,8 @@ ENV DJANGO_SETTINGS_MODULE "application.settings"
 
 ARG APPLICATION_NAME=application
 
-LABEL maintaner="andreichiro@gmail.com"
-LABEL .br.com.andreichiro-schema.application=$APPLICATION_NAME
+LABEL maintaner="srikanthbanoth7533@gmail.com"
+LABEL .br.com.srikanth-schema.application=$APPLICATION_NAME
 
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client git && rm -rf /var/lib/apt/lists/*
