@@ -20,4 +20,3 @@ databases:
   - name: data-engineer-db
     plan: free
     databaseName: django_db
-    user: postgres
