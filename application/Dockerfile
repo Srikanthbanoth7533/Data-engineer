@@ -1,4 +1,4 @@
-FROM python:latest AS build
+FROM python:3.10 AS build
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -18,5 +18,6 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt --no-cache-dir
 
 EXPOSE 8000
+
 
 ENTRYPOINT python manage.py runserver 0.0.0.0:8000
