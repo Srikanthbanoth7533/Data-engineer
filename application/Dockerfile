@@ -1,4 +1,4 @@
-FROM python:3.11-slim AS build
+FROM python:3.10 AS build
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -18,4 +18,5 @@ RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
 
-ENTRYPOINT gunicorn application.wsgi:application --bind 0.0.0.0:8000 --workers 2
+
+ENTRYPOINT python manage.py runserver 0.0.0.0:8000
